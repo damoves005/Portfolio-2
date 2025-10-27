@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "parcel build index.html --dist-dir dist",
+    "start": "parcel index.html"
+  },
   "dependencies": {
     "bootstrap": "^5.3.3",
     "parcel": "^2.13.3",
