@@ -1654,6 +1654,15 @@ footer .footer-nav {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 40px;
   }
+  .education .education-card:nth-child(3) {
+    flex-direction: row-reverse;
+  }
+  .education .education-card:nth-child(3) .card-image {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 40px;
+  }
   .volunteer .volunteer-text {
     width: calc(60% - 20px);
   }
