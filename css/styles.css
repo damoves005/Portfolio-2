@@ -1002,6 +1002,149 @@ nav ul li a:hover {
   border-top-right-radius: 40px;
 }
 
+.volunteer {
+  padding: 20px 20px;
+  margin-top: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.volunteer h2 {
+  color: var(--text);
+  width: 100%;
+  font-size: 3rem;
+  font-weight: 500;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer h2 span {
+  color: var(--tertiary);
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .volunteer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+}
+
+.volunteer .volunteer-text {
+  background-color: var(--primary70);
+  padding: 60px;
+  border-radius: 40px;
+  width: 100%;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .volunteer-text h3 {
+  color: var(--text);
+  font-size: 2rem;
+  margin: 0;
+  display: inline-block;
+  background: linear-gradient(180deg, transparent 50%, var(--accent) 50%);
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .volunteer-text h4 {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .volunteer-text p {
+  color: var(--text);
+  font-size: 1.25rem;
+  margin-top: 20px;
+  line-height: 1.6;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .volunteer-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.volunteer .highlight-item {
+  background-color: var(--secondary70);
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  text-align: center;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .highlight-item i {
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .highlight-item h5 {
+  color: var(--text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .highlight-item p {
+  color: var(--text);
+  font-size: 1rem;
+  margin-top: 0;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.volunteer .volunteer-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+.volunteer .gallery-item {
+  width: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: var(--transition03);
+  transition-property: transform, box-shadow;
+}
+
+.volunteer .gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.volunteer .gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: var(--transition03);
+  transition-property: transform;
+}
+
+.volunteer .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
 .portfolio-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -1117,9 +1260,45 @@ nav ul li a:hover {
   transition-property: var(--transition-colors);
 }
 
+.portfolio .portfolio-card .card-link {
+  display: block;
+  text-decoration: none;
+  transition: var(--transition03);
+  transition-property: transform, opacity;
+}
+
+.portfolio .portfolio-card .card-link:hover {
+  opacity: 0.9;
+}
+
+.portfolio .portfolio-card .card-title-link {
+  color: var(--text);
+  text-decoration: none;
+  transition: var(--transition03);
+  transition-property: var(--transition-colors);
+}
+
+.portfolio .portfolio-card .card-title-link:hover {
+  color: var(--accent);
+}
+
 .portfolio .portfolio-card img {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
+}
+
+.portfolio .portfolio-card .card-buttons {
+  flex-wrap: wrap;
+}
+
+.portfolio .portfolio-card .card-buttons .button-secondary {
+  font-size: 0.75rem;
+  width: 100%;
+  margin-top: 0;
+}
+
+.portfolio .portfolio-card .card-buttons .button-secondary i {
+  font-size: 1.25rem;
 }
 
 .show-more-container {
@@ -1474,6 +1653,18 @@ footer .footer-nav {
     border-top-left-radius: 40px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 40px;
+  }
+  .volunteer .volunteer-text {
+    width: calc(60% - 20px);
+  }
+  .volunteer .volunteer-gallery {
+    width: calc(40% - 20px);
+  }
+  .volunteer .gallery-item {
+    width: 100%;
+  }
+  .volunteer .highlight-item {
+    width: calc(33.333% - 20px);
   }
   .portfolio-container {
     grid-template-columns: repeat(2, 1fr);
