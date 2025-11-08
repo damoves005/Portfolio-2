@@ -252,7 +252,7 @@ h1 a:hover {
 }
 
 h1 img {
-  max-width: 200px;
+  max-width: 110px;
   width: 100%;
   height: auto;
   display: block;
@@ -1719,6 +1719,9 @@ footer .footer-nav {
   h1 {
     font-size: 2rem;
   }
+  h1 img {
+    max-width: 100px;
+  }
   .menu {
     display: none;
   }
@@ -1741,6 +1744,7 @@ footer .footer-nav {
     margin-right: 20px;
   }
   header .center-container {
+    max-width: 1440px;
     transition: padding 0.3s ease, height 0.3s ease;
     padding: 20px 20px;
   }
